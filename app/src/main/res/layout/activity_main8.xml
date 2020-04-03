@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jacker.jayantkapila.expensetracker.Main8Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/fn"
+            android:elevation="4dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="*This will be Treated as User Name"
+           android:padding="10dp"
+           android:textColor="@color/yellow"
+           android:layout_marginTop="10dp"
+           android:elevation="4dp"
+           android:layout_toRightOf="@id/fn"
+           />
+
+   </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name Please"
+            android:id="@+id/name"
+            android:text="Jayant"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:text="cool"
+            android:hint="Choose a Strong Password"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email-Id"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:text="jackername@gmail.com"
+            android:hint="someone@something.com"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhoneNo."
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number please?"
+            android:id="@+id/contact"
+            android:inputType="phone"
+            android:text="8295019197"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occupation"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What do you do for living?"
+            android:id="@+id/occupation"
+            android:text="live"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Income"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/income"
+            android:hint="%How Much$"
+            android:textSize="20dp"
+            android:text="50000000"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Limit"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/limit"
+            android:hint="This will set your daily limit"
+            android:textSize="20dp"
+            android:text="2000"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:onClick="SignUp"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

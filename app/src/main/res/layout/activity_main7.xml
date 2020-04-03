@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.jacker.jayantkapila.expensetracker.Main7Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="15dp"
+        android:text="Make a new Entry Here" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/textView"
+        android:text="Amount" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_marginRight="33dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="number"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:text="Date"
+            android:textStyle="bold"
+            android:id="@+id/txt_date"
+            android:textColor="@color/colorPrimary"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/date_button"
+                android:layout_gravity="center|bottom"
+                android:background="#fff"/>
+
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:id="@+id/txt_time"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:text="Time"
+            android:gravity="left"
+            android:textColor="@color/colorPrimary"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_access_time_black_24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/time_button"
+                android:layout_gravity="center|bottom"
+                android:background="#fff"/>
+</LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:text="Category" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:id="@+id/card_food"
+            android:background="#fff"
+            android:onClick="add_food"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_food"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:onClick="add_food"
+                    android:background="@drawable/circlepurple"
+                    android:src="@drawable/ic_food_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_food"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#4a1ec6"
+                    android:text="Food" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:id="@+id/card_entertainment"
+            android:onClick="add_entertainment"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll_entertainment"
+                android:background="#fff"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:onClick="add_entertainment"
+                    android:background="@drawable/circlepink"
+                    android:src="@drawable/ic_entertainment_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_entertainment"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#4a1ec6"
+                    android:text="Entertainment" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:id="@+id/card_travel"
+            android:onClick="add_travel"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll_travel"
+                android:background="#fff"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:onClick="add_travel"
+                    android:background="@drawable/circlegreen"
+                    android:src="@drawable/ic_travel_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_travel"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#4a1ec6"
+                    android:text="Travel" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:id="@+id/card_bills"
+            android:onClick="add_bills"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:id="@+id/ll_bills"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="74dp"
+                    android:onClick="add_bills"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circleyellow"
+                    android:src="@drawable/ic_bills_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_bills"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#4a1ec6"
+                    android:text="Bills" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:onClick="add_fees"
+            android:id="@+id/card_fees"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:id="@+id/ll_fees"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="74dp"
+                    android:onClick="add_fees"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circlepurple"
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_fees"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#4a1ec6"
+                    android:text="Fees" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+</LinearLayout>
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AlertDialog.AppCompat.Light"-->
+        <!--android:id="@+id/radiogroup"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:layout_alignLeft="@+id/textView"-->
+        <!--android:layout_alignStart="@+id/textView"-->
+        <!--android:layout_below="@+id/textView3">-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Food"-->
+            <!--android:drawableRight="@drawable/ic_power_settings_new_black_24dp"-->
+            <!--android:allowUndo="true"-->
+            <!--android:textSize="20dp"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Entertainment"-->
+            <!--android:allowUndo="true"-->
+            <!--android:textSize="20dp"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Travel"-->
+            <!--android:allowUndo="true"-->
+            <!--android:textSize="20dp"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Bills"-->
+            <!--android:allowUndo="true"-->
+            <!--android:textSize="20dp"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Fees"-->
+            <!--android:allowUndo="true"-->
+            <!--android:textSize="20dp"/>-->
+    <!--</RadioGroup>-->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
